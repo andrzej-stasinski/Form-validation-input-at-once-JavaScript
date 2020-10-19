@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Form valid</title>
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div id="outer">
+
+<form id="opinia" method="get">
+	<h2>Form valid RegExp - onkeyup</h2>
+	<div class="row">
+		<div class="lr"></div><div class="rr">Adam Smith</div>
+		<div class="lr">Imię i nazwisko:</div>
+		<div class="rr"><input type="text" id="pers" name="pers" /></div>
+		<div id="ipers" class="info"></div>
+	</div>
+	<div class="row">
+		<div class="lr"></div><div class="rr">111-11</div>
+		<div class="lr">Kod pocztowy:</div>
+		<div class="rr"><input type="text" title="1111-11" id="code" name="code" /></div>
+		<div id="icode" class="info"></div>
+	</div>
+	<div class="row">
+		<div class="lr"></div><div class="rr">adam@wp.pl</div>
+		<div class="lr">E-Mail:</div>
+		<div class="rr"><input type="text" id="email" name="email" /></div>
+		<div id="iemail" class="info"></div>
+	</div>
+	<div class="row">
+		<div class="lr">Usługa z której korzystałeś:</div>
+		<div class="rr">
+			<select id="usluga" name="usluga">
+					<option value=""></option>
+					<option value="php">Hosting PHP</option>
+					<option value="asp">Hosting ASP</option>
+					<option value="mysql">Hosting MySQL</option>
+					<option value="pgsql">Hosting PostgreSQL</option>
+			</select>
+		</div>
+		<div id="iusluga" class="info"></div>
+	</div>
+	<div class="row">
+		<div class="lr">Ocena usługi:</div>
+		<div class="rr">
+			<input type="radio" name="ocena" value="1" />1&nbsp;
+			<input type="radio" name="ocena" value="2" />2&nbsp;
+			<input type="radio" name="ocena" value="3" />3&nbsp;
+			<input type="radio" name="ocena" value="4" />4&nbsp;
+			<input type="radio" name="ocena" value="5" />5&nbsp;
+		</div>
+		<div id="iocena" class="info"></div>
+	</div>
+	<div class="row">
+		<div class="lr">Twój komentarz:</div>
+		<div class="rr"><textarea id="komentarz" name="komentarz" cols="15" rows="3"></textarea></div>
+		<div id="ikomentarz" class="info"></div>
+	</div>
+	<div class="row">
+		<div class="lr">Zgoda na przetwarzanie danych:</div>
+		<div class="rr"><input type="checkbox" id="zgoda" name="zgoda" /></div>
+		<div id="izgoda" class="info"></div>
+	</div>
+	<div>
+		<div class="submit">
+		<input type="submit" value="Prześlij" /></div>
+	</div>
+	<h2 id='result'></h2>
+</form>
+
+</div>
+</body>
+</html>
